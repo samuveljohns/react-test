@@ -2,14 +2,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 ## Completed
-Create react app
-Migrate javascript to typescript
-Added Enzyme for unittesting
+- Create react app
+- Migrate javascript to typescript
+- Added Enzyme for unittesting
 
 ## Inprogress
-Code coverarge
-Component level testing
-Mock API call
+- Code coverarge
+- Component level testing
+- Mock API call
 
 ## Available Scripts
 
