@@ -9,10 +9,8 @@ Lifting State up example - https://reactjs.org/docs/lifting-state-up.html
 I have added unitest and integration test for the example.
 
 - Ported Javascript to Typescript
-- Added unit test case for Lifting State up react example 
 - Added unit test case
 - Integration testing using Enzyme (Partially done)
-
 ### Unit test script
 ![unit test script](https://github.com/samuveljohns/jest-demo/blob/master/Screenshot%202019-07-13%20at%201.35.15%20AM.png)
 
