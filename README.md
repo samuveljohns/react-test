@@ -1,19 +1,16 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Lifting up state react example https://reactjs.org/docs/lifting-state-up.html
 
-## Completed
-- Create react app
-- Migrate javascript to typescript
-- Added Enzyme for unittesting
+![React JS Lifting State up](https://reactjs.org/react-devtools-state-ef94afc3447d75cdc245c77efb0d63be.gif)
 
-## Inprogress
-- Code coverarge
-- Component level testing
-- Mock API call
+- Ported Javascript to Typescript
+- Added unit test case for Lifting State up react example 
+- Added unit test case
+- Integration testing using Enzyme (Partially done)
 
-## Available Scripts
+### Unit test script
 
-In the project directory, you can run:
 
 ### `npm start`
 
