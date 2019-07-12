@@ -22,15 +22,15 @@ enum ScaleNames{
   f = 'Fahrenheit'
 }
 
-function toCelsius(fahrenheit:any) {
+export function toCelsius(fahrenheit:any) {
   return (fahrenheit - 32) * 5 / 9;
 }
 
-function toFahrenheit(celsius: any) {
+export function toFahrenheit(celsius: any) {
   return (celsius * 9 / 5) + 32;
 }
 
-function tryConvert(temperature: string, convert: Function) {
+export function tryConvert(temperature: string, convert: Function) {
   const input = parseFloat(temperature);
   if (Number.isNaN(input)) {
     return '';
@@ -40,14 +40,14 @@ function tryConvert(temperature: string, convert: Function) {
   return rounded.toString();
 }
 
-const BoilingVerdict: StatelessComponent<BoilingVerdictProps> = (props)=>{
+export const BoilingVerdict: StatelessComponent<BoilingVerdictProps> = (props)=>{
   if (props.celsius >= 100) {
     return (<p>The water would boil.</p>);
   }
   return (<p>The water would not boil.</p>);
 }
 
-class TemperatureInput extends React.Component<TemperatureInputProps, {}> {
+export class TemperatureInput extends React.Component<TemperatureInputProps, {}> {
   constructor(props: TemperatureInputProps) {
     super(props);
     this.handleChange = this.handleChange.bind(this);
