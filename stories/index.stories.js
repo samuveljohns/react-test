@@ -2,18 +2,22 @@ import React from 'react';
 
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { linkTo } from '@storybook/addon-links';
 
-import { Button, Welcome } from '@storybook/react/demo';
+import App,{TemperatureInput,BoilingVerdict} from '../src/App'
 
-storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
-storiesOf('Button', module)
-  .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>)
-  .add('with some emoji', () => (
-    <Button onClick={action('clicked')}>
-      <span role="img" aria-label="so cool">
-        😀 😎 👍 💯
-      </span>
-    </Button>
-  ));
+const celsiusData = {scale:'celsius',temperature:100,onTemperatureChange:action('handleCelsiusChange')}
+const fahrenheitData = {scale:'fahrenheit',temperature:212,onTemperatureChange:action('handleFahrenheitChange')}
+const boilingVerdictData = {celsius:100}
+storiesOf('Calculator',module)
+  .add('BoilingVerdict - Celsius greater than 100',()=><BoilingVerdict celsius={100} />)
+  .add('BoilingVerdict - less than 100',()=><BoilingVerdict celsius={50} />)
+  .add('TemperatureInput',() =>
+    <div>
+      <TemperatureInput {...celsiusData}/>
+      <TemperatureInput {...fahrenheitData}/>
+      <BoilingVerdict {...boilingVerdictData}/>
+    </div>
+  )
+  .add('Calculator',() => <App />)
+
