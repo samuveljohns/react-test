@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Calculator BoilingVerdict - Celsius greater than 100 1`] = `
+<p>
+  The water would boil.
+</p>
+`;
+
+exports[`Storyshots Calculator BoilingVerdict - less than 100 1`] = `
+<p>
+  The water would not boil.
+</p>
+`;
+
+exports[`Storyshots Calculator Calculator 1`] = `
+<div>
+  <fieldset>
+    <legend>
+      Enter temperature in 
+      Celsius
+      :
+    </legend>
+    <input
+      onChange={[Function]}
+      value=""
+    />
+  </fieldset>
+  <fieldset>
+    <legend>
+      Enter temperature in 
+      Fahrenheit
+      :
+    </legend>
+    <input
+      onChange={[Function]}
+      value=""
+    />
+  </fieldset>
+  <p>
+    The water would not boil.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Calculator TemperatureInput 1`] = `
+<div>
+  <fieldset>
+    <legend>
+      Enter temperature in 
+      celsius
+      :
+    </legend>
+    <input
+      onChange={[Function]}
+      value={100}
+    />
+  </fieldset>
+  <fieldset>
+    <legend>
+      Enter temperature in 
+      fahrenheit
+      :
+    </legend>
+    <input
+      onChange={[Function]}
+      value={212}
+    />
+  </fieldset>
+  <p>
+    The water would boil.
+  </p>
+</div>
+`;
