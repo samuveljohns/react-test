@@ -41,10 +41,9 @@ To run the test coverage
 ### To do from scratch
 
 ## 1. Create react app with typescript
+
 npx create-react-app my-app --typescript
-
-# or
-
+or 
 yarn create react-app my-app --typescript
 
 ## 2. Add Enzyme
