@@ -19,8 +19,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "jest:integration": "jest -c src/tests/integration/jest.config.js --detectOpenHandles",
+    "test:integration": "start-server-and-test storybook http-get://localhost:6006 jest:integration",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook"
   },
   "eslintConfig": {
@@ -46,7 +48,12 @@
     "@storybook/addons": "^5.1.9",
     "@storybook/react": "^5.1.9",
     "babel-loader": "8.0.5",
+
+    "jest-image-snapshot": "^2.9.0",
+    "jest-puppeteer": "^4.3.0",
+    "puppeteer": "^1.18.1",
     "react": "^16.8.6",
-    "require-context.macro": "^1.0.4"
+    "require-context.macro": "^1.0.4",
+    "start-server-and-test": "^1.9.1"
   }
 }
