@@ -38,21 +38,21 @@ To run the test coverage
 ### Unit test script
 ![unit test script](https://github.com/samuveljohns/jest-demo/blob/master/Screenshot%202019-07-13%20at%201.35.15%20AM.png)
 
-### To do from scratch
+## Todo app from scratch
 
-## 1. Create react app with typescript
+### 1. Create react app with typescript
 
 npx create-react-app my-app --typescript
 or 
 yarn create react-app my-app --typescript
 
-## 2. Add Enzyme
+### 2. Add Enzyme
 npm i --save-dev enzyme enzyme-adapter-react-16
 or 
 yarn add enzyme enzyme-adapter-react-16 -d
 
 and create setupConfig.js by following https://airbnb.io/enzyme/
-## 3. Add storybook
+### 3. Add storybook
 npx -p @storybook/cli sb init --type react
 
 Add storybook addons
