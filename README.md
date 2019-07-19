@@ -54,8 +54,9 @@ yarn add enzyme enzyme-adapter-react-16 -d
 ```
 and create setupConfig.js by following https://airbnb.io/enzyme/
 ### 3. Add storybook
+```
 npx -p @storybook/cli sb init --type react
-
+```
 Add storybook addons
 ```
 yarn add --dev @storybook/addon-storyshots react-test-renderer require-context.macro
