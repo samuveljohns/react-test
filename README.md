@@ -12,15 +12,15 @@ Demo app features
 - Snapshot testing with storyshot addon to automated snapshot testing for stories
 - Automated Visual Testing using storybook and puppeteer
 
-### `yarn start`
+## `yarn start`
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### `yarn run test:unit`
+## `yarn run test:unit`
 
 Launches the test runner in the interactive watch mode.<br>
 
-### `yarn run test:integration`
+## `yarn run test:integration`
 
 To run the Automated visual testing.
 For testing changed the text it is captured in Visual testing and stored as image in /src/tests/integration/__image_snapshots__/__diff_output__/ directory
@@ -28,7 +28,7 @@ For testing changed the text it is captured in Visual testing and stored as imag
 ![Visual test example](https://github.com/samuveljohns/react-test/blob/master/integration/__image_snapshots__/__diff_output__/calculator-test-js-calculator-visually-looks-correct-1-diff.png)
 
 
-### `yarn run test -- --coverage`
+## `yarn run test -- --coverage`
 
 To run the test coverage
 
@@ -41,23 +41,25 @@ To run the test coverage
 ## Todo app from scratch
 
 ### 1. Create react app with typescript
-
+```
 npx create-react-app my-app --typescript
 or 
 yarn create react-app my-app --typescript
-
+```
 ### 2. Add Enzyme
+```
 npm i --save-dev enzyme enzyme-adapter-react-16
 or 
 yarn add enzyme enzyme-adapter-react-16 -d
-
+```
 and create setupConfig.js by following https://airbnb.io/enzyme/
 ### 3. Add storybook
 npx -p @storybook/cli sb init --type react
 
 Add storybook addons
+```
 yarn add --dev @storybook/addon-storyshots react-test-renderer require-context.macro
-
+```
 - create storybook.test.js
 ```
 // src/storybook.test.js
