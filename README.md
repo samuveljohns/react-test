@@ -25,7 +25,7 @@ Launches the test runner in the interactive watch mode.<br>
 To run the Automated visual testing.
 For testing changed the text it is captured in Visual testing and stored as image in /src/tests/integration/__image_snapshots__/__diff_output__/ directory
 
-![Visual test example](https://github.com/samuveljohns/react-test/blob/master/src/tests/integration/__image_snapshots__/__diff_output__/calculator-test-js-calculator-visually-looks-correct-1-diff.png)
+![Visual test example](https://github.com/samuveljohns/react-test/blob/master/integration/__image_snapshots__/__diff_output__/calculator-test-js-calculator-visually-looks-correct-1-diff.png)
 
 
 ### `yarn run test -- --coverage`
