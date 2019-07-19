@@ -90,8 +90,9 @@ Reference:
 - https://www.learnstorybook.com/react/en/simple-component/
 
 ## 3. Add Automated visual testing
+```
 yarn add puppeteer jest-puppeteer jest-image-snapshot start-server-and-test --dev
-
+```
 Follow for other configurations:https://storybook.js.org/docs/testing/automated-visual-testing/#example-using-puppeteer-and-jest
 
 
